@@ -1,0 +1,515 @@
+//
+// Styles
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.login {
+  background: #e7e7e7;
+}
+
+/* Blog */
+
+.alignleft, .alignright {
+padding: 5px;
+background: #fff;
+-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.alignleft { float: left; margin: 0 20px 20px 0; }
+.alignright { float: right; margin: 0 0 20px 20px; }
+
+.margin-left {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.margin-right {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#bsidebar {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0px;
+  .panel-body {
+    ul {
+      padding: 0px 0px 0px 15px;
+    }
+  }
+}
+
+.search-row {
+  margin-bottom: 20px;
+  .col-xs-9 {
+    padding-right: 0px;
+  }
+}
+
+
+.blog-title {
+  a {
+    font-size: 24px;
+    color: $blog-title-color;
+    font-size: $blog-title-size;
+    font-family: $blog-title-font;
+  }
+}
+
+.upper-meta {
+  margin-bottom: 15px;
+}
+
+.single-title {
+  font-size: 30px;
+}
+
+/* Custom Widgets */
+
+.custom-widget {
+  margin-bottom: 20px;
+  .current_page_item {
+    a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-active-link-hover-color;
+        background-color: $nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+/* Slide Show Styles */
+
+.slide-container {
+  padding-top: 20px; 
+}
+
+.slide-wrapper {
+  border: 1px solid #000000;
+}
+
+/* Page Styles */
+
+#breadcrumbs {
+  color: #8D8881;
+  margin: 10px 0px 10px 0px;
+}
+
+.page-thumbnail {
+  float: left;
+  margin-right: 20px;
+}
+
+.content-block {
+  margin-bottom: 50px;  
+  padding-top: 20px;
+  h1 {
+    margin-top: 0px;
+  }
+}
+
+.body-bg {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  .container {
+    background: #fff;
+  }
+}
+
+.upper-meta-side {
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.blog-roll-title {
+  font-size: 24px;
+}
+
+/* Contact Page */
+
+.contact-headline {
+  margin: 20px 0px 20px 0px;
+  text-align: right;
+}
+
+.contact-name {
+  font-size: 22px;
+  line-height: 22px;
+  margin: 10px 0px 0px 0px;
+}
+
+.contact-subname {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 5px 0px 10px 0px;
+}
+
+.contact-hours {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 5px 0px 10px 0px;
+}
+
+/*Testimonials Page Styles */
+.testimonial-row {
+  margin-top: 10px;
+}
+
+.testimonial-bar {
+  padding: 20px 0px 10px 0px;
+  background: #e2e2e2;  
+}
+
+.testimonial-text {
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0,0,0,0.7);  
+  padding: 0px;
+  opacity: 0.0;
+  &:hover {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.7);  
+    padding: 0px;
+    opacity: 1.0;
+    -moz-transition: opacity .5s; /* Firefox */
+    -webkit-transition: opacity .5s; /* Safari and Chrome */
+    -o-transition: opacity .5s; /* Opera */
+    transition: opacity .5s;
+  }
+}
+
+/* Header Styles */
+
+.top-bar {
+  background: $top-bar-color;
+  margin-bottom: 10px;
+  min-height: 20px;
+  padding: 3px 0px 5px 0px;
+}
+
+.hours-short {
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  a {
+    color: #e2e2e2;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.social-links {
+  text-align: right;
+  margin-top: 10px;
+  a {
+    svg {
+      opacity: 0.8;
+    }
+  }
+}
+
+.social-links-bottom {
+  text-align: left;
+  a {
+    svg {
+      background: #fff;
+      border-radius: 30px;
+      padding: 1px;
+    }
+    &:hover {
+      svg {
+        opacity: 1.0; 
+        -moz-transition: opacity .5s; /* Firefox */
+        -webkit-transition: opacity .5s; /* Safari and Chrome */
+       -o-transition: opacity .5s; /* Opera */
+       transition: opacity .5s;
+      }
+    }
+  }
+}
+
+
+.h-address {
+  margin-top: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  span {
+    font-size: 14px;
+    line-height: 26px;
+    color: #8d8881;
+    font-family: "jaf-facitweb",sans-serif;
+  }
+}
+
+.h-phone {
+  margin-top: 20px;
+  text-align: right;
+  span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #8d8881;
+    font-family: "jaf-facitweb",sans-serif;
+    strong {
+      color: #8a7a67;
+      font-size: 18px;
+    }
+  }
+}
+
+
+/*Footer Styles */
+
+.footer-bar {
+  background: $footer-bar-color;
+  padding: 50px 0px 50px 0px;
+}
+.footer-copyright {
+  background: $copyright-bar-color;
+  padding: 10px 0px 10px 0px;
+}
+.f-map{
+  img {
+    margin-bottom: 20px;
+  }
+}
+.copyright {
+  text-align: center; 
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  color: #e2e2e2;
+  a {
+    color: #ffffff;
+  }
+}
+
+.contact-box {
+  color: #fef4e6;
+  min-height: 160px;
+  h4 {
+    margin-top: 0px;
+  }
+}
+
+.footer-links {
+  min-height: 160px;
+  li {
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
+.footer-menu {
+  list-style-type: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  a {
+    color: $footer-menu-link-color;
+    &:hover {
+      color: $footer-menu-link-hover-color;
+    }
+  }
+}
+
+/* Callouts */
+
+.callout-title {
+  text-align: center;
+  font-size: 24px;
+  font-family: $font-family-sans-serif;
+  text-shadow: 1px 1px 0px rgba(255,255,255,1.0);
+  a {
+    color: $gray-dark;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.callout-body {
+  text-align: center;
+  font-size: 15px;
+  font-family: $font-family-sans-serif;
+}
+
+/* Services Pages */
+
+.services-tabs {
+  margin-top: 30px;
+}
+
+/* Bootstrap Dropdown Fix */
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;    
+}
+.navbar .dropdown-menu {
+  margin-top: 0px;
+}
+
+
+/* Team PAge */
+
+.team-row {
+  margin-bottom: 20px;  
+}
+
+.team-box {
+  border: 1px solid #8D8881;
+}
+
+.team-name {
+  position: absolute;
+  bottom: 0px;
+  left: 30px; 
+}
+
+.modal-thumb {
+  float: left;
+  margin-right: 20px;
+}
+
+.bx-wrapper .bx-pager {
+  position: absolute;
+  top: -10px !important;
+  right: 10px !important;
+  width: auto !important;
+}
+
+#bx-pager {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  padding: 10px 0px 10px 0px;
+  a {
+    img {
+      border: 1px solid #8D8881;
+      margin-left: 5px;
+    }
+    .active {
+      img {
+        border: 1px solid #428BCA;
+      }
+    }
+  }
+}
+
+.item img {
+  border: 1px solid #8D8881 !important;
+}
+
+.pager-instructions {
+  font-size: 12px;
+  color: #8D8881;
+  text-align: center;
+}
+
+
+.maps-box {
+  width: 100%;
+  overflow: hidden;
+  img {
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+  }
+}
+
+.maps-box-narrow {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+  img {
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+  }
+}
+
+/* Testimonial 2 Page */
+
+.speech-bubble {
+  background: $speech-bubble-nth0;
+  @include border-bottom-radius(10px);
+  @include border-top-radius(10px);
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.speech-bubble-triangle {
+  width: 1px;
+  height: 1px;
+  border-top: 10px solid $speech-bubble-nth0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute; 
+  bottom: -20px;
+  right: 20px;
+}
+
+// Affix 
+.affix {
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+  .navbar {
+    .caret {
+      display: none;
+    }
+  }
+  
+  .navbar {
+    .dropdown-menu {
+      display: inline-block;
+      position: relative;
+      float: none;
+      box-shadow: none;
+      background: transparent;
+      border: none;
+      margin-left: 30px;
+      li {
+        a{
+          &:before {
+            content: '-';
+          }
+        }
+      }
+    }
+  }
+
+  .affix {
+    position: relative !important;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
