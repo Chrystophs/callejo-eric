@@ -36,27 +36,20 @@
 <?php get_template_part( 'partials/svg','icons'); ?>
 <?php if (of_get_option('remove_top_bar') != 1) : ?> 
 <div class="top-bar">
-	<div class="container">
-    	<div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <span class="hours-short"><span class="glyphicon glyphicon-time"></span> <?php if (function_exists('contact_detail')) { contact_detail('hours_short'); } ?> - <a href="#">Contact Us</a></span>
-            </div>
-        </div>
-    </div>
 </div>
 <?php endif; ?>
 <header role="banner">
 <div class="container">
 	<div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-5">
+            <div class="col-sm-5 col-md-5 col-lg-4">
                 <?php $logo_header = of_get_option('logo_header');
 				  if ($logo_header) { ?>
 				   <a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
-                        <img src="<?php echo $logo_header; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
+                        <img src="<?php echo $logo_header; ?>" alt="<?php bloginfo('name'); ?>" class="main-logo img-responsive"/>
                    </a>
 				<?php } else { ?>
 					<a class="main-logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
-						<img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt="<?php bloginfo('name'); ?>" class="img-responsive"/>
+						<img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt="<?php bloginfo('name'); ?>" class="main-logo img-responsive"/>
 					</a>
 				<?php } ?>
             </div>
@@ -119,4 +112,9 @@
 <?php if (of_get_option('make_nav_sticky') == 1) : ?> 
 </div>
 <?php endif; ?>
+<div class="slider">
+    <div class="banner-col">
+        <img src="<?php bloginfo('template_url'); ?>/i/banner.png">
+    </div>
+</div>
 
