@@ -220,10 +220,10 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+  //margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    padding-top:    10px;
+    padding-top:    55px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
   }
@@ -260,8 +260,8 @@
     > li {
       float: left;
       > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
+        //padding-top:    $navbar-padding-vertical;
+        //padding-bottom: $navbar-padding-vertical;
       }
     }
 
@@ -623,4 +623,17 @@
     }
   }
 
+}
+
+//Images
+.services {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url('../i/nav-icon.png') 0 0;
+  a {
+    left: -65%;
+  }
 }

@@ -11,6 +11,7 @@
 	visibility: hidden;
 	line-height: 0;
 	height: 0;
+	margin-top: 10px;
 }
 /* display none until init */
 .owl-carousel{
@@ -20,7 +21,7 @@
 	-ms-touch-action: pan-y;
 }
 .owl-carousel-wide {
-	margin-top: 0px;
+	margin-top: 10px;
 }
 .owl-carousel-narrow {
 	margin-top: 20px;

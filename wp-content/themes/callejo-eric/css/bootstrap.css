@@ -3340,6 +3340,24 @@ input[type="button"].btn-block {
 
 /* Page Styles */
 /* line 111, bootstrap/_styles.scss */
+.blue-tag {
+  color: #00AEB7;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* line 119, bootstrap/_styles.scss */
+.img-divider {
+  background: url("../i/img-divider.png");
+  height: 37px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* line 127, bootstrap/_styles.scss */
 .spacer {
   margin-left: auto;
   margin-right: auto;
@@ -3350,7 +3368,7 @@ input[type="button"].btn-block {
   margin-bottom: 30px;
 }
 
-/* line 121, bootstrap/_styles.scss */
+/* line 137, bootstrap/_styles.scss */
 .page-title {
   font-family: 'HelveticaNeue';
   font-size: 35px;
@@ -3360,7 +3378,7 @@ input[type="button"].btn-block {
   letter-spacing: -1px;
 }
 
-/* line 130, bootstrap/_styles.scss */
+/* line 146, bootstrap/_styles.scss */
 .second-head {
   text-align: center;
   color: #46A266;
@@ -3370,71 +3388,71 @@ input[type="button"].btn-block {
   font-size: 25px;
 }
 
-/* line 139, bootstrap/_styles.scss */
+/* line 155, bootstrap/_styles.scss */
 #breadcrumbs {
   color: #8D8881;
   margin: 10px 0px 10px 0px;
 }
 
-/* line 144, bootstrap/_styles.scss */
+/* line 160, bootstrap/_styles.scss */
 .page-thumbnail {
   float: left;
   margin-right: 20px;
 }
 
-/* line 149, bootstrap/_styles.scss */
+/* line 165, bootstrap/_styles.scss */
 .content-block {
   margin-bottom: 50px;
   padding-top: 20px;
 }
-/* line 152, bootstrap/_styles.scss */
+/* line 168, bootstrap/_styles.scss */
 .content-block h1 {
   margin-top: 35px;
 }
 
-/* line 157, bootstrap/_styles.scss */
+/* line 173, bootstrap/_styles.scss */
 .body-bg {
   background-color: #ffffff;
   padding-bottom: 20px;
 }
-/* line 160, bootstrap/_styles.scss */
+/* line 176, bootstrap/_styles.scss */
 .body-bg .container {
   background: #fff;
 }
 
-/* line 165, bootstrap/_styles.scss */
+/* line 181, bootstrap/_styles.scss */
 .upper-meta-side {
   color: #888888;
   margin-bottom: 20px;
 }
 
-/* line 170, bootstrap/_styles.scss */
+/* line 186, bootstrap/_styles.scss */
 .blog-roll-title {
   font-size: 24px;
 }
 
 /* Contact Page */
-/* line 176, bootstrap/_styles.scss */
+/* line 192, bootstrap/_styles.scss */
 .contact-headline {
   margin: 20px 0px 20px 0px;
   text-align: right;
 }
 
-/* line 181, bootstrap/_styles.scss */
+/* line 197, bootstrap/_styles.scss */
 .contact-name {
   font-size: 22px;
   line-height: 22px;
   margin: 10px 0px 0px 0px;
 }
 
-/* line 187, bootstrap/_styles.scss */
+/* line 203, bootstrap/_styles.scss */
 .contact-subname {
   font-size: 18px;
   line-height: 18px;
   margin: 5px 0px 10px 0px;
 }
 
-/* line 193, bootstrap/_styles.scss */
+/* line 209, bootstrap/_styles.scss */
 .contact-hours {
   font-size: 18px;
   line-height: 18px;
@@ -3442,18 +3460,18 @@ input[type="button"].btn-block {
 }
 
 /*Testimonials Page Styles */
-/* line 200, bootstrap/_styles.scss */
+/* line 216, bootstrap/_styles.scss */
 .testimonial-row {
   margin-top: 10px;
 }
 
-/* line 204, bootstrap/_styles.scss */
+/* line 220, bootstrap/_styles.scss */
 .testimonial-bar {
   padding: 20px 0px 10px 0px;
   background: #e2e2e2;
 }
 
-/* line 209, bootstrap/_styles.scss */
+/* line 225, bootstrap/_styles.scss */
 .testimonial-text {
   position: absolute;
   top: 0px;
@@ -3461,7 +3479,7 @@ input[type="button"].btn-block {
   padding: 0px;
   opacity: 0.0;
 }
-/* line 215, bootstrap/_styles.scss */
+/* line 231, bootstrap/_styles.scss */
 .testimonial-text:hover {
   position: absolute;
   top: 0px;
@@ -3478,7 +3496,7 @@ input[type="button"].btn-block {
 }
 
 /* Header Styles */
-/* line 230, bootstrap/_styles.scss */
+/* line 246, bootstrap/_styles.scss */
 .banner-col {
   display: inline-block;
   margin-top: 10px;
@@ -3486,53 +3504,53 @@ input[type="button"].btn-block {
   height: 410px;
 }
 
-/* line 237, bootstrap/_styles.scss */
+/* line 253, bootstrap/_styles.scss */
 .main-logo {
   margin: 10px 0 10px 0;
 }
 
-/* line 240, bootstrap/_styles.scss */
+/* line 256, bootstrap/_styles.scss */
 .top-bar {
   background: #63a485;
   min-height: 20px;
 }
 
-/* line 245, bootstrap/_styles.scss */
+/* line 261, bootstrap/_styles.scss */
 .hours-short {
   font-size: 11px;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 249, bootstrap/_styles.scss */
+/* line 265, bootstrap/_styles.scss */
 .hours-short a {
   color: #e2e2e2;
 }
-/* line 251, bootstrap/_styles.scss */
+/* line 267, bootstrap/_styles.scss */
 .hours-short a:hover {
   color: #fff;
 }
 
-/* line 257, bootstrap/_styles.scss */
+/* line 273, bootstrap/_styles.scss */
 .social-links {
   text-align: right;
   margin-top: 10px;
 }
-/* line 261, bootstrap/_styles.scss */
+/* line 277, bootstrap/_styles.scss */
 .social-links a svg {
   opacity: 0.8;
 }
 
-/* line 267, bootstrap/_styles.scss */
+/* line 283, bootstrap/_styles.scss */
 .social-links-bottom {
   text-align: left;
 }
-/* line 270, bootstrap/_styles.scss */
+/* line 286, bootstrap/_styles.scss */
 .social-links-bottom a svg {
   background: #fff;
   border-radius: 30px;
   padding: 1px;
 }
-/* line 276, bootstrap/_styles.scss */
+/* line 292, bootstrap/_styles.scss */
 .social-links-bottom a:hover svg {
   opacity: 1.0;
   -moz-transition: opacity .5s;
@@ -3544,13 +3562,13 @@ input[type="button"].btn-block {
   transition: opacity .5s;
 }
 
-/* line 288, bootstrap/_styles.scss */
+/* line 304, bootstrap/_styles.scss */
 .h-address {
   margin-top: 10px;
   text-align: right;
   margin-bottom: 20px;
 }
-/* line 292, bootstrap/_styles.scss */
+/* line 308, bootstrap/_styles.scss */
 .h-address span {
   font-size: 14px;
   line-height: 26px;
@@ -3558,106 +3576,210 @@ input[type="button"].btn-block {
   font-family: "jaf-facitweb",sans-serif;
 }
 
-/* line 300, bootstrap/_styles.scss */
+/* line 316, bootstrap/_styles.scss */
 .h-phone {
   margin-top: 20px;
   text-align: right;
 }
-/* line 303, bootstrap/_styles.scss */
+/* line 319, bootstrap/_styles.scss */
 .h-phone span {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: #8d8881;
-  font-family: "jaf-facitweb",sans-serif;
+  font-family: "HelveticaNeue",sans-serif;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
-/* line 308, bootstrap/_styles.scss */
+/* line 326, bootstrap/_styles.scss */
 .h-phone span strong {
   color: #8a7a67;
   font-size: 18px;
 }
 
+/* line 333, bootstrap/_styles.scss */
+.blue-tag-number {
+  color: #00AEB7 !important;
+}
+
 /*Footer Styles */
-/* line 318, bootstrap/_styles.scss */
+/* line 339, bootstrap/_styles.scss */
+.green-tag-number {
+  font-size: 20px !important;
+  color: #B6D700 !important;
+  letter-spacing: -1px;
+}
+
+/* line 344, bootstrap/_styles.scss */
+.f-phone {
+  margin-top: 25px;
+  text-align: center;
+}
+/* line 347, bootstrap/_styles.scss */
+.f-phone span {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  font-family: "HelveticaNeue",sans-serif;
+  font-weight: 100;
+}
+/* line 353, bootstrap/_styles.scss */
+.f-phone span strong {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 359, bootstrap/_styles.scss */
+.description {
+  left: -30px;
+}
+
+/* line 363, bootstrap/_styles.scss */
+.smile-footer {
+  color: #fff;
+  font-family: "HelveticaNeue",sans-serif;
+  text-align: center;
+}
+/* line 367, bootstrap/_styles.scss */
+.smile-footer div {
+  background-color: #BEE000;
+  height: 5px;
+  width: 100px;
+  margin: 15px auto 30px auto;
+}
+
+/* line 375, bootstrap/_styles.scss */
+.dental-footer {
+  color: #fff;
+  font-family: "HelveticaNeue",sans-serif;
+  text-align: center;
+}
+/* line 379, bootstrap/_styles.scss */
+.dental-footer div {
+  background-color: #BEE000;
+  height: 5px;
+  width: 100px;
+  margin: 15px auto 30px auto;
+}
+
+/* line 387, bootstrap/_styles.scss */
+.testimonial-footer {
+  color: #fff;
+  font-family: "HelveticaNeue",sans-serif;
+  text-align: center;
+}
+/* line 391, bootstrap/_styles.scss */
+.testimonial-footer div {
+  background-color: #BEE000;
+  height: 5px;
+  width: 100px;
+  margin: 15px auto 30px auto;
+}
+
+/* line 399, bootstrap/_styles.scss */
+.request-bar {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(100, 150, 147, 0.5);
+}
+
+/* line 404, bootstrap/_styles.scss */
+.request {
+  height: 50px;
+  width: 300px;
+  background-color: #00AEB7;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  font-family: "HelveticaNeue",sans-serif;
+  text-align: center;
+  padding-top: 12px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 420, bootstrap/_styles.scss */
 .footer-bar {
-  background: #534741;
+  background: #4f4f4f;
   padding: 50px 0px 50px 0px;
 }
 
-/* line 322, bootstrap/_styles.scss */
+/* line 424, bootstrap/_styles.scss */
 .footer-copyright {
   background: #362f2d;
   padding: 10px 0px 10px 0px;
 }
 
-/* line 327, bootstrap/_styles.scss */
+/* line 429, bootstrap/_styles.scss */
 .f-map img {
   margin-bottom: 20px;
 }
 
-/* line 331, bootstrap/_styles.scss */
+/* line 433, bootstrap/_styles.scss */
 .copyright {
   text-align: center;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   color: #e2e2e2;
 }
-/* line 336, bootstrap/_styles.scss */
+/* line 438, bootstrap/_styles.scss */
 .copyright a {
   color: #ffffff;
 }
 
-/* line 341, bootstrap/_styles.scss */
+/* line 443, bootstrap/_styles.scss */
 .contact-box {
   color: #fef4e6;
   min-height: 160px;
 }
-/* line 344, bootstrap/_styles.scss */
+/* line 446, bootstrap/_styles.scss */
 .contact-box h4 {
   margin-top: 0px;
 }
 
-/* line 349, bootstrap/_styles.scss */
+/* line 451, bootstrap/_styles.scss */
 .footer-links {
   min-height: 160px;
 }
-/* line 352, bootstrap/_styles.scss */
+/* line 454, bootstrap/_styles.scss */
 .footer-links li ul {
   list-style-type: none;
 }
 
-/* line 358, bootstrap/_styles.scss */
+/* line 460, bootstrap/_styles.scss */
 .footer-menu {
   list-style-type: none;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
-/* line 362, bootstrap/_styles.scss */
+/* line 464, bootstrap/_styles.scss */
 .footer-menu a {
   color: #fef4e6;
 }
-/* line 364, bootstrap/_styles.scss */
+/* line 466, bootstrap/_styles.scss */
 .footer-menu a:hover {
   color: black;
 }
 
 /* Callouts */
-/* line 372, bootstrap/_styles.scss */
+/* line 474, bootstrap/_styles.scss */
 .callout-title {
   text-align: center;
   font-size: 24px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 1px 1px 0px white;
 }
-/* line 377, bootstrap/_styles.scss */
+/* line 479, bootstrap/_styles.scss */
 .callout-title a {
   color: #333333;
 }
-/* line 379, bootstrap/_styles.scss */
+/* line 481, bootstrap/_styles.scss */
 .callout-title a:hover {
   text-decoration: none;
 }
 
-/* line 385, bootstrap/_styles.scss */
+/* line 487, bootstrap/_styles.scss */
 .callout-body {
   text-align: center;
   font-size: 15px;
@@ -3665,47 +3787,47 @@ input[type="button"].btn-block {
 }
 
 /* Services Pages */
-/* line 393, bootstrap/_styles.scss */
+/* line 495, bootstrap/_styles.scss */
 .services-tabs {
   margin-top: 30px;
 }
 
 /* Bootstrap Dropdown Fix */
-/* line 398, bootstrap/_styles.scss */
+/* line 500, bootstrap/_styles.scss */
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
 }
 
-/* line 401, bootstrap/_styles.scss */
+/* line 503, bootstrap/_styles.scss */
 .navbar .dropdown-menu {
   margin-top: 0px;
 }
 
 /* Team PAge */
-/* line 408, bootstrap/_styles.scss */
+/* line 510, bootstrap/_styles.scss */
 .team-row {
   margin-bottom: 20px;
 }
 
-/* line 412, bootstrap/_styles.scss */
+/* line 514, bootstrap/_styles.scss */
 .team-box {
   border: 1px solid #8D8881;
 }
 
-/* line 416, bootstrap/_styles.scss */
+/* line 518, bootstrap/_styles.scss */
 .team-name {
   position: absolute;
   bottom: 0px;
   left: 30px;
 }
 
-/* line 422, bootstrap/_styles.scss */
+/* line 524, bootstrap/_styles.scss */
 .modal-thumb {
   float: left;
   margin-right: 20px;
 }
 
-/* line 427, bootstrap/_styles.scss */
+/* line 529, bootstrap/_styles.scss */
 .bx-wrapper .bx-pager {
   position: absolute;
   top: -10px !important;
@@ -3713,7 +3835,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   width: auto !important;
 }
 
-/* line 434, bootstrap/_styles.scss */
+/* line 536, bootstrap/_styles.scss */
 #bx-pager {
   width: 100%;
   text-align: center;
@@ -3721,48 +3843,48 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: #f9f9f9;
   padding: 10px 0px 10px 0px;
 }
-/* line 441, bootstrap/_styles.scss */
+/* line 543, bootstrap/_styles.scss */
 #bx-pager a img {
   border: 1px solid #8D8881;
   margin-left: 5px;
 }
-/* line 446, bootstrap/_styles.scss */
+/* line 548, bootstrap/_styles.scss */
 #bx-pager a .active img {
   border: 1px solid #428BCA;
 }
 
-/* line 453, bootstrap/_styles.scss */
+/* line 555, bootstrap/_styles.scss */
 .item img {
   border: 1px solid #8D8881 !important;
 }
 
-/* line 457, bootstrap/_styles.scss */
+/* line 559, bootstrap/_styles.scss */
 .pager-instructions {
   font-size: 12px;
   color: #8D8881;
   text-align: center;
 }
 
-/* line 464, bootstrap/_styles.scss */
+/* line 566, bootstrap/_styles.scss */
 .maps-box {
   width: 100%;
   overflow: hidden;
 }
-/* line 467, bootstrap/_styles.scss */
+/* line 569, bootstrap/_styles.scss */
 .maps-box img {
   position: relative;
   left: 50%;
   margin-left: -960px;
 }
 
-/* line 474, bootstrap/_styles.scss */
+/* line 576, bootstrap/_styles.scss */
 .maps-box-narrow {
   margin-top: 20px;
   width: 100%;
   overflow: hidden;
   border: 1px solid #000;
 }
-/* line 479, bootstrap/_styles.scss */
+/* line 581, bootstrap/_styles.scss */
 .maps-box-narrow img {
   position: relative;
   left: 50%;
@@ -3770,7 +3892,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 /* Testimonial 2 Page */
-/* line 488, bootstrap/_styles.scss */
+/* line 590, bootstrap/_styles.scss */
 .speech-bubble {
   background: #d8e7f0;
   border-bottom-right-radius: 10px;
@@ -3782,7 +3904,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   position: relative;
 }
 
-/* line 497, bootstrap/_styles.scss */
+/* line 599, bootstrap/_styles.scss */
 .speech-bubble-triangle {
   width: 1px;
   height: 1px;
@@ -3795,7 +3917,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   right: 20px;
 }
 
-/* line 510, bootstrap/_styles.scss */
+/* line 612, bootstrap/_styles.scss */
 .affix {
   top: 0px;
   width: 100%;
@@ -3806,12 +3928,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 992px) {
-  /* line 523, bootstrap/_styles.scss */
+  /* line 625, bootstrap/_styles.scss */
   .navbar .caret {
     display: none;
   }
 
-  /* line 529, bootstrap/_styles.scss */
+  /* line 631, bootstrap/_styles.scss */
   .navbar .dropdown-menu {
     display: inline-block;
     position: relative;
@@ -3821,12 +3943,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border: none;
     margin-left: 30px;
   }
-  /* line 539, bootstrap/_styles.scss */
+  /* line 641, bootstrap/_styles.scss */
   .navbar .dropdown-menu li a:before {
     content: '-';
   }
 
-  /* line 547, bootstrap/_styles.scss */
+  /* line 649, bootstrap/_styles.scss */
   .affix {
     position: relative !important;
   }
@@ -5484,57 +5606,98 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* line 24, bootstrap/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
-/* line 31, bootstrap/_navs.scss */
-.nav > li.disabled > a {
+/* line 30, bootstrap/_navs.scss */
+.nav.disabled > a {
   color: #999999;
 }
-/* line 35, bootstrap/_navs.scss */
-.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+/* line 34, bootstrap/_navs.scss */
+.nav.disabled > a:hover, .nav.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
+
+/* line 42, bootstrap/_navs.scss */
+#nav {
+  margin-bottom: 0;
+  padding-left: 10%;
+  list-style: none;
+}
+/* line 21, bootstrap/_mixins.scss */
+#nav:before, #nav:after {
+  content: " ";
+  display: table;
+}
+/* line 25, bootstrap/_mixins.scss */
+#nav:after {
+  clear: both;
+}
 /* line 48, bootstrap/_navs.scss */
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+#nav > li {
+  position: relative;
+  display: block;
+}
+/* line 52, bootstrap/_navs.scss */
+#nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+/* line 57, bootstrap/_navs.scss */
+#nav > li > a:hover, #nav > li > a:focus {
+  text-decoration: none;
+}
+/* line 63, bootstrap/_navs.scss */
+#nav > li.disabled > a {
+  color: #999999;
+}
+/* line 67, bootstrap/_navs.scss */
+#nav > li.disabled > a:hover, #nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+/* line 80, bootstrap/_navs.scss */
+#nav .open > a, #nav .open > a:hover, #nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
 }
-/* line 59, bootstrap/_navs.scss */
-.nav .nav-divider {
+/* line 91, bootstrap/_navs.scss */
+#nav .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-/* line 66, bootstrap/_navs.scss */
-.nav > li > a > img {
+/* line 98, bootstrap/_navs.scss */
+#nav > li > a > img {
   max-width: none;
 }
 
-/* line 76, bootstrap/_navs.scss */
+/* line 108, bootstrap/_navs.scss */
 .nav-tabs {
   border-bottom: 1px solid #dddddd;
 }
-/* line 78, bootstrap/_navs.scss */
+/* line 110, bootstrap/_navs.scss */
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
 }
-/* line 84, bootstrap/_navs.scss */
+/* line 116, bootstrap/_navs.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
-/* line 89, bootstrap/_navs.scss */
+/* line 121, bootstrap/_navs.scss */
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
 }
-/* line 98, bootstrap/_navs.scss */
+/* line 130, bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
   background-color: white;
@@ -5543,74 +5706,74 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   cursor: default;
 }
 
-/* line 118, bootstrap/_navs.scss */
+/* line 150, bootstrap/_navs.scss */
 .nav-pills > li {
   float: left;
 }
-/* line 122, bootstrap/_navs.scss */
+/* line 154, bootstrap/_navs.scss */
 .nav-pills > li > a {
   border-radius: 4px;
 }
-/* line 125, bootstrap/_navs.scss */
+/* line 157, bootstrap/_navs.scss */
 .nav-pills > li + li {
   margin-left: 2px;
 }
-/* line 133, bootstrap/_navs.scss */
+/* line 165, bootstrap/_navs.scss */
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: white;
   background-color: #428bca;
 }
 
-/* line 144, bootstrap/_navs.scss */
+/* line 176, bootstrap/_navs.scss */
 .nav-stacked > li {
   float: none;
 }
-/* line 146, bootstrap/_navs.scss */
+/* line 178, bootstrap/_navs.scss */
 .nav-stacked > li + li {
   margin-top: 2px;
   margin-left: 0;
 }
 
-/* line 160, bootstrap/_navs.scss */
+/* line 192, bootstrap/_navs.scss */
 .nav-justified, .nav-tabs.nav-justified {
   width: 100%;
 }
-/* line 163, bootstrap/_navs.scss */
+/* line 195, bootstrap/_navs.scss */
 .nav-justified > li, .nav-tabs.nav-justified > li {
   float: none;
 }
-/* line 165, bootstrap/_navs.scss */
+/* line 197, bootstrap/_navs.scss */
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
   text-align: center;
   margin-bottom: 5px;
 }
-/* line 171, bootstrap/_navs.scss */
+/* line 203, bootstrap/_navs.scss */
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
   left: auto;
 }
 @media (min-width: 992px) {
-  /* line 177, bootstrap/_navs.scss */
+  /* line 209, bootstrap/_navs.scss */
   .nav-justified > li, .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
   }
-  /* line 180, bootstrap/_navs.scss */
+  /* line 212, bootstrap/_navs.scss */
   .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
     margin-bottom: 0;
   }
 }
 
-/* line 190, bootstrap/_navs.scss */
+/* line 222, bootstrap/_navs.scss */
 .nav-tabs-justified, .nav-tabs.nav-justified {
   border-bottom: 0;
 }
-/* line 193, bootstrap/_navs.scss */
+/* line 225, bootstrap/_navs.scss */
 .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
   margin-right: 0;
   border-radius: 4px;
 }
-/* line 201, bootstrap/_navs.scss */
+/* line 233, bootstrap/_navs.scss */
 .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -5619,12 +5782,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   border: 1px solid #dddddd;
 }
 @media (min-width: 992px) {
-  /* line 206, bootstrap/_navs.scss */
+  /* line 238, bootstrap/_navs.scss */
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
   }
-  /* line 212, bootstrap/_navs.scss */
+  /* line 244, bootstrap/_navs.scss */
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:hover,
@@ -5634,23 +5797,23 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
-/* line 224, bootstrap/_navs.scss */
+/* line 256, bootstrap/_navs.scss */
 .tab-content > .tab-pane {
   display: none;
 }
-/* line 227, bootstrap/_navs.scss */
+/* line 259, bootstrap/_navs.scss */
 .tab-content > .active {
   display: block;
 }
 
-/* line 237, bootstrap/_navs.scss */
+/* line 269, bootstrap/_navs.scss */
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-/* line 246, bootstrap/_navs.scss */
+/* line 278, bootstrap/_navs.scss */
 .divider {
   display: block;
   text-indent: -1000em;
@@ -5867,13 +6030,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
 }
 
-/* line 222, bootstrap/_navbar.scss */
-.navbar-nav {
-  margin: 20px -15px;
-}
 /* line 225, bootstrap/_navbar.scss */
 .navbar-nav > li > a {
-  padding-top: 10px;
+  padding-top: 55px;
   padding-bottom: 10px;
   line-height: 20px;
 }
@@ -5911,11 +6070,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   /* line 260, bootstrap/_navbar.scss */
   .navbar-nav > li {
     float: left;
-  }
-  /* line 262, bootstrap/_navbar.scss */
-  .navbar-nav > li > a {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
   /* line 268, bootstrap/_navbar.scss */
   .navbar-nav.navbar-right:last-child {
@@ -6203,6 +6357,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* line 621, bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link:hover {
   color: white;
+}
+
+/* line 629, bootstrap/_navbar.scss */
+.services {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("../i/nav-icon.png") 0 0;
+}
+/* line 636, bootstrap/_navbar.scss */
+.services a {
+  left: -65%;
 }
 
 /* line 6, bootstrap/_breadcrumbs.scss */
@@ -8050,10 +8218,11 @@ button.close {
   visibility: hidden;
   line-height: 0;
   height: 0;
+  margin-top: 10px;
 }
 
 /* display none until init */
-/* line 16, bootstrap/_owlcarousel.scss */
+/* line 17, bootstrap/_owlcarousel.scss */
 .owl-carousel {
   display: none;
   position: relative;
@@ -8061,31 +8230,31 @@ button.close {
   -ms-touch-action: pan-y;
 }
 
-/* line 22, bootstrap/_owlcarousel.scss */
+/* line 23, bootstrap/_owlcarousel.scss */
 .owl-carousel-wide {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
-/* line 25, bootstrap/_owlcarousel.scss */
+/* line 26, bootstrap/_owlcarousel.scss */
 .owl-carousel-narrow {
   margin-top: 20px;
 }
 
-/* line 28, bootstrap/_owlcarousel.scss */
+/* line 29, bootstrap/_owlcarousel.scss */
 .owl-carousel .owl-wrapper {
   display: none;
   position: relative;
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
-/* line 33, bootstrap/_owlcarousel.scss */
+/* line 34, bootstrap/_owlcarousel.scss */
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
-/* line 38, bootstrap/_owlcarousel.scss */
+/* line 39, bootstrap/_owlcarousel.scss */
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -8094,18 +8263,18 @@ button.close {
   transition: height 500ms ease-in-out;
 }
 
-/* line 46, bootstrap/_owlcarousel.scss */
+/* line 47, bootstrap/_owlcarousel.scss */
 .owl-carousel .owl-item {
   float: left;
 }
 
-/* line 50, bootstrap/_owlcarousel.scss */
+/* line 51, bootstrap/_owlcarousel.scss */
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
   cursor: pointer;
 }
 
-/* line 53, bootstrap/_owlcarousel.scss */
+/* line 54, bootstrap/_owlcarousel.scss */
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -8116,13 +8285,13 @@ button.close {
 }
 
 /* mouse grab icon */
-/* line 63, bootstrap/_owlcarousel.scss */
+/* line 64, bootstrap/_owlcarousel.scss */
 .grabbing {
   cursor: url(grabbing.png) 8 8, move;
 }
 
 /* fix */
-/* line 69, bootstrap/_owlcarousel.scss */
+/* line 70, bootstrap/_owlcarousel.scss */
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
   -webkit-backface-visibility: hidden;
@@ -8137,14 +8306,14 @@ button.close {
 * 	Owl Carousel Owl Demo Theme 
 *	v1.3.3
 */
-/* line 83, bootstrap/_owlcarousel.scss */
+/* line 84, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center;
 }
 
 /* Styling Next and Prev buttons */
-/* line 90, bootstrap/_owlcarousel.scss */
+/* line 91, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls .owl-buttons div {
   color: #FFF;
   display: inline-block;
@@ -8165,7 +8334,7 @@ button.close {
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 107, bootstrap/_owlcarousel.scss */
+/* line 108, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover {
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
@@ -8174,7 +8343,7 @@ button.close {
 }
 
 /* Styling Pagination*/
-/* line 115, bootstrap/_owlcarousel.scss */
+/* line 116, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
@@ -8182,7 +8351,7 @@ button.close {
   /*IE7 life-saver */
 }
 
-/* line 120, bootstrap/_owlcarousel.scss */
+/* line 121, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls .owl-page span {
   display: block;
   width: 12px;
@@ -8197,7 +8366,7 @@ button.close {
   background: #ff5335;
 }
 
-/* line 134, bootstrap/_owlcarousel.scss */
+/* line 135, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
@@ -8206,7 +8375,7 @@ button.close {
 }
 
 /* If PaginationNumbers is true */
-/* line 141, bootstrap/_owlcarousel.scss */
+/* line 142, bootstrap/_owlcarousel.scss */
 .owl-theme .owl-controls .owl-page span.owl-numbers {
   height: auto;
   width: auto;
@@ -8219,7 +8388,7 @@ button.close {
 }
 
 /* preloading images */
-/* line 153, bootstrap/_owlcarousel.scss */
+/* line 154, bootstrap/_owlcarousel.scss */
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
@@ -8229,7 +8398,7 @@ button.close {
  *  Owl Carousel CSS3 Transitions 
  *  v1.3.2
  */
-/* line 163, bootstrap/_owlcarousel.scss */
+/* line 164, bootstrap/_owlcarousel.scss */
 .owl-origin {
   -webkit-perspective: 1200px;
   -webkit-perspective-origin-x: 50%;
@@ -8241,7 +8410,7 @@ button.close {
 }
 
 /* fade */
-/* line 173, bootstrap/_owlcarousel.scss */
+/* line 174, bootstrap/_owlcarousel.scss */
 .owl-fade-out {
   z-index: 10;
   -webkit-animation: fadeOut .7s both ease;
@@ -8249,7 +8418,7 @@ button.close {
   animation: fadeOut .7s both ease;
 }
 
-/* line 179, bootstrap/_owlcarousel.scss */
+/* line 180, bootstrap/_owlcarousel.scss */
 .owl-fade-in {
   -webkit-animation: fadeIn .7s both ease;
   -moz-animation: fadeIn .7s both ease;
@@ -8257,14 +8426,14 @@ button.close {
 }
 
 /* backSlide */
-/* line 185, bootstrap/_owlcarousel.scss */
+/* line 186, bootstrap/_owlcarousel.scss */
 .owl-backSlide-out {
   -webkit-animation: backSlideOut 1s both ease;
   -moz-animation: backSlideOut 1s both ease;
   animation: backSlideOut 1s both ease;
 }
 
-/* line 190, bootstrap/_owlcarousel.scss */
+/* line 191, bootstrap/_owlcarousel.scss */
 .owl-backSlide-in {
   -webkit-animation: backSlideIn 1s both ease;
   -moz-animation: backSlideIn 1s both ease;
@@ -8272,14 +8441,14 @@ button.close {
 }
 
 /* goDown */
-/* line 196, bootstrap/_owlcarousel.scss */
+/* line 197, bootstrap/_owlcarousel.scss */
 .owl-goDown-out {
   -webkit-animation: scaleToFade .7s ease both;
   -moz-animation: scaleToFade .7s ease both;
   animation: scaleToFade .7s ease both;
 }
 
-/* line 201, bootstrap/_owlcarousel.scss */
+/* line 202, bootstrap/_owlcarousel.scss */
 .owl-goDown-in {
   -webkit-animation: goDown .6s ease both;
   -moz-animation: goDown .6s ease both;
@@ -8287,52 +8456,52 @@ button.close {
 }
 
 /* scaleUp */
-/* line 207, bootstrap/_owlcarousel.scss */
+/* line 208, bootstrap/_owlcarousel.scss */
 .owl-fadeUp-in {
   -webkit-animation: scaleUpFrom .5s ease both;
   -moz-animation: scaleUpFrom .5s ease both;
   animation: scaleUpFrom .5s ease both;
 }
 
-/* line 213, bootstrap/_owlcarousel.scss */
+/* line 214, bootstrap/_owlcarousel.scss */
 .owl-fadeUp-out {
   -webkit-animation: scaleUpTo .5s ease both;
   -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
 }
 
-/* line 219, bootstrap/_owlcarousel.scss */
+/* line 220, bootstrap/_owlcarousel.scss */
 #owl-home-narrow .owl-controls .owl-buttons div {
   position: absolute;
 }
 
-/* line 223, bootstrap/_owlcarousel.scss */
+/* line 224, bootstrap/_owlcarousel.scss */
 #owl-home-narrow .owl-controls .owl-buttons .owl-prev {
   left: -45px;
   top: 44%;
   padding: 7px 9px 5px 9px;
 }
 
-/* line 229, bootstrap/_owlcarousel.scss */
+/* line 230, bootstrap/_owlcarousel.scss */
 #owl-home-narrow .owl-controls .owl-buttons .owl-next {
   right: -45px;
   top: 44%;
   padding: 7px 9px 5px 9px;
 }
 
-/* line 235, bootstrap/_owlcarousel.scss */
+/* line 236, bootstrap/_owlcarousel.scss */
 #owl-home-wide .owl-controls .owl-buttons div {
   position: absolute;
 }
 
-/* line 239, bootstrap/_owlcarousel.scss */
+/* line 240, bootstrap/_owlcarousel.scss */
 #owl-home-wide .owl-controls .owl-buttons .owl-prev {
   left: 15px;
   top: 44%;
   padding: 7px 9px 5px 9px;
 }
 
-/* line 245, bootstrap/_owlcarousel.scss */
+/* line 246, bootstrap/_owlcarousel.scss */
 #owl-home-wide .owl-controls .owl-buttons .owl-next {
   right: 15px;
   top: 44%;
@@ -8342,112 +8511,112 @@ button.close {
 /* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {
-  /* line 253, bootstrap/_owlcarousel.scss */
+  /* line 254, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes empty {
-  /* line 256, bootstrap/_owlcarousel.scss */
+  /* line 257, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 }
 
 @keyframes empty {
-  /* line 259, bootstrap/_owlcarousel.scss */
+  /* line 260, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 262, bootstrap/_owlcarousel.scss */
+  /* line 263, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 263, bootstrap/_owlcarousel.scss */
+  /* line 264, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
-  /* line 266, bootstrap/_owlcarousel.scss */
+  /* line 267, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 267, bootstrap/_owlcarousel.scss */
+  /* line 268, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  /* line 270, bootstrap/_owlcarousel.scss */
+  /* line 271, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 271, bootstrap/_owlcarousel.scss */
+  /* line 272, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeOut {
-  /* line 274, bootstrap/_owlcarousel.scss */
+  /* line 275, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 275, bootstrap/_owlcarousel.scss */
+  /* line 276, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes fadeOut {
-  /* line 278, bootstrap/_owlcarousel.scss */
+  /* line 279, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 279, bootstrap/_owlcarousel.scss */
+  /* line 280, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  /* line 282, bootstrap/_owlcarousel.scss */
+  /* line 283, bootstrap/_owlcarousel.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 283, bootstrap/_owlcarousel.scss */
+  /* line 284, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes backSlideOut {
-  /* line 286, bootstrap/_owlcarousel.scss */
+  /* line 287, bootstrap/_owlcarousel.scss */
   25% {
     opacity: .5;
     -webkit-transform: translateZ(-500px);
   }
 
-  /* line 287, bootstrap/_owlcarousel.scss */
+  /* line 288, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(-200%);
   }
 
-  /* line 288, bootstrap/_owlcarousel.scss */
+  /* line 289, bootstrap/_owlcarousel.scss */
   100% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(-200%);
@@ -8455,19 +8624,19 @@ button.close {
 }
 
 @-moz-keyframes backSlideOut {
-  /* line 291, bootstrap/_owlcarousel.scss */
+  /* line 292, bootstrap/_owlcarousel.scss */
   25% {
     opacity: .5;
     -moz-transform: translateZ(-500px);
   }
 
-  /* line 292, bootstrap/_owlcarousel.scss */
+  /* line 293, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(-200%);
   }
 
-  /* line 293, bootstrap/_owlcarousel.scss */
+  /* line 294, bootstrap/_owlcarousel.scss */
   100% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(-200%);
@@ -8475,19 +8644,19 @@ button.close {
 }
 
 @keyframes backSlideOut {
-  /* line 296, bootstrap/_owlcarousel.scss */
+  /* line 297, bootstrap/_owlcarousel.scss */
   25% {
     opacity: .5;
     transform: translateZ(-500px);
   }
 
-  /* line 297, bootstrap/_owlcarousel.scss */
+  /* line 298, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     transform: translateZ(-500px) translateX(-200%);
   }
 
-  /* line 298, bootstrap/_owlcarousel.scss */
+  /* line 299, bootstrap/_owlcarousel.scss */
   100% {
     opacity: .5;
     transform: translateZ(-500px) translateX(-200%);
@@ -8495,19 +8664,19 @@ button.close {
 }
 
 @-webkit-keyframes backSlideIn {
-  /* line 301, bootstrap/_owlcarousel.scss */
+  /* line 302, bootstrap/_owlcarousel.scss */
   0%, 25% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(200%);
   }
 
-  /* line 302, bootstrap/_owlcarousel.scss */
+  /* line 303, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     -webkit-transform: translateZ(-500px);
   }
 
-  /* line 303, bootstrap/_owlcarousel.scss */
+  /* line 304, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateZ(0) translateX(0);
@@ -8515,19 +8684,19 @@ button.close {
 }
 
 @-moz-keyframes backSlideIn {
-  /* line 306, bootstrap/_owlcarousel.scss */
+  /* line 307, bootstrap/_owlcarousel.scss */
   0%, 25% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(200%);
   }
 
-  /* line 307, bootstrap/_owlcarousel.scss */
+  /* line 308, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     -moz-transform: translateZ(-500px);
   }
 
-  /* line 308, bootstrap/_owlcarousel.scss */
+  /* line 309, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
     -moz-transform: translateZ(0) translateX(0);
@@ -8535,19 +8704,19 @@ button.close {
 }
 
 @keyframes backSlideIn {
-  /* line 311, bootstrap/_owlcarousel.scss */
+  /* line 312, bootstrap/_owlcarousel.scss */
   0%, 25% {
     opacity: .5;
     transform: translateZ(-500px) translateX(200%);
   }
 
-  /* line 312, bootstrap/_owlcarousel.scss */
+  /* line 313, bootstrap/_owlcarousel.scss */
   75% {
     opacity: .5;
     transform: translateZ(-500px);
   }
 
-  /* line 313, bootstrap/_owlcarousel.scss */
+  /* line 314, bootstrap/_owlcarousel.scss */
   100% {
     opacity: 1;
     transform: translateZ(0) translateX(0);
@@ -8555,7 +8724,7 @@ button.close {
 }
 
 @-webkit-keyframes scaleToFade {
-  /* line 316, bootstrap/_owlcarousel.scss */
+  /* line 317, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     -webkit-transform: scale(0.8);
@@ -8563,7 +8732,7 @@ button.close {
 }
 
 @-moz-keyframes scaleToFade {
-  /* line 319, bootstrap/_owlcarousel.scss */
+  /* line 320, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     -moz-transform: scale(0.8);
@@ -8571,7 +8740,7 @@ button.close {
 }
 
 @keyframes scaleToFade {
-  /* line 322, bootstrap/_owlcarousel.scss */
+  /* line 323, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     transform: scale(0.8);
@@ -8579,28 +8748,28 @@ button.close {
 }
 
 @-webkit-keyframes goDown {
-  /* line 325, bootstrap/_owlcarousel.scss */
+  /* line 326, bootstrap/_owlcarousel.scss */
   from {
     -webkit-transform: translateY(-100%);
   }
 }
 
 @-moz-keyframes goDown {
-  /* line 328, bootstrap/_owlcarousel.scss */
+  /* line 329, bootstrap/_owlcarousel.scss */
   from {
     -moz-transform: translateY(-100%);
   }
 }
 
 @keyframes goDown {
-  /* line 331, bootstrap/_owlcarousel.scss */
+  /* line 332, bootstrap/_owlcarousel.scss */
   from {
     transform: translateY(-100%);
   }
 }
 
 @-webkit-keyframes scaleUpFrom {
-  /* line 335, bootstrap/_owlcarousel.scss */
+  /* line 336, bootstrap/_owlcarousel.scss */
   from {
     opacity: 0;
     -webkit-transform: scale(1.5);
@@ -8608,7 +8777,7 @@ button.close {
 }
 
 @-moz-keyframes scaleUpFrom {
-  /* line 338, bootstrap/_owlcarousel.scss */
+  /* line 339, bootstrap/_owlcarousel.scss */
   from {
     opacity: 0;
     -moz-transform: scale(1.5);
@@ -8616,7 +8785,7 @@ button.close {
 }
 
 @keyframes scaleUpFrom {
-  /* line 341, bootstrap/_owlcarousel.scss */
+  /* line 342, bootstrap/_owlcarousel.scss */
   from {
     opacity: 0;
     transform: scale(1.5);
@@ -8624,7 +8793,7 @@ button.close {
 }
 
 @-webkit-keyframes scaleUpTo {
-  /* line 345, bootstrap/_owlcarousel.scss */
+  /* line 346, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     -webkit-transform: scale(1.5);
@@ -8632,7 +8801,7 @@ button.close {
 }
 
 @-moz-keyframes scaleUpTo {
-  /* line 348, bootstrap/_owlcarousel.scss */
+  /* line 349, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     -moz-transform: scale(1.5);
@@ -8640,7 +8809,7 @@ button.close {
 }
 
 @keyframes scaleUpTo {
-  /* line 351, bootstrap/_owlcarousel.scss */
+  /* line 352, bootstrap/_owlcarousel.scss */
   to {
     opacity: 0;
     transform: scale(1.5);

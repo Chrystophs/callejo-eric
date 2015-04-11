@@ -60,21 +60,20 @@
                 
                 <div class="h-phone">
                 	<?php
-						$phone_new = contact_detail('phone_new', '' , '', false);
-                        $phone_current = contact_detail('phone_current', '' , '', false);
+						$kettering_phone_new = contact_detail('kettering_phone_new', '' , '', false);
+                        $kettering_phone_current = contact_detail('kettering_phone_current', '' , '', false);
+                        $dayton_phone_new = contact_detail('dayton_phone_new', '' , '', false);
+                        $dayton_phone_current = contact_detail('dayton_phone_current', '' , '', false);
 					?>
-                    <?php if (!empty($phone_new)) : ?>
-                        New Patients: <span itemprop="telephone"><strong><?php echo $phone_new; ?></strong></span><br/>
+                    <?php if (!empty($kettering_phone_new)) : ?>
+                        <span class="blue-tag-number">KETTERING</span> <span itemprop="telephone">NEW PATIENTS: <?php echo $kettering_phone_new; ?> CURRENT PATIENTS: <?php echo $kettering_phone_current; ?></span>
                     <?php endif; ?>
-                    <?php if (!empty($phone_new)) : ?>
-                        Current Patients:
+                    <?php if (!empty($dayton_phone_new)) : ?>
+                        <span class="blue-tag-number">DAYTON</span> <span itemprop="telephone">NEW PATIENTS: <?php echo $dayton_phone_new; ?> CURRENT PATIENTS: <?php echo $dayton_phone_current; ?></span>
                     <?php else: ?>
                         Phone: 
                     <?php endif; ?>
                         <span itemprop="telephone"><strong><?php echo $phone_current; ?></strong></span>
-                </div>
-                <div class="h-address">
-                    <span><?php if (function_exists('contact_detail')) { contact_detail('address_short'); } ?></span>
                 </div>
             </div>
      </div>
@@ -112,9 +111,9 @@
 <?php if (of_get_option('make_nav_sticky') == 1) : ?> 
 </div>
 <?php endif; ?>
-<div class="slider">
-    <div class="banner-col">
-        <img src="<?php bloginfo('template_url'); ?>/i/banner.png">
+<div id="owl-home-wide" class="owl-carousel owl-carousel-wide owl-theme visible-lg visible-md">
+    <div class="slider-content">
+        <img src="<?php bloginfo('template_url'); ?>/i/banner.png" class="img-responsive">
     </div>
 </div>
 

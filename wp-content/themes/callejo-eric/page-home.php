@@ -36,6 +36,15 @@ get_header();
                             </header>
                             <div class="spacer">
                             </div>
+                    </div>
+              </div>
+        </div>
+  </div>
+                            <div class="img-divider"></div>
+  <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+                      <div class="content-block">
                             <section itemprop="articleBody">
 								
                                 <?php
