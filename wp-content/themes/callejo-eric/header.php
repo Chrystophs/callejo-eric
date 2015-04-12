@@ -111,9 +111,38 @@
 <?php if (of_get_option('make_nav_sticky') == 1) : ?> 
 </div>
 <?php endif; ?>
-<div id="owl-home-wide" class="owl-carousel owl-carousel-wide owl-theme visible-lg visible-md">
-    <div class="slider-content">
-        <img src="<?php bloginfo('template_url'); ?>/i/banner.png" class="img-responsive">
+<!--Open if is_home first condition-->
+<?php if (is_front_page()) {?>
+    <?php
+        $posts_per_page = 4;
+        $args = array( 'post_type' => 'homepage-slider', 'order' => 'ASC', 'posts_per_page' => $posts_per_page );
+        $loop = new WP_Query( $args ); 
+    ?>
+    <?php if ($loop->have_posts()) : ?>
+    <div id="owl-home-wide" class="owl-carousel owl-carousel-wide owl-theme visible-lg visible-md">
+                    <?php $cnt2 = 0; ?>
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <div>
+                            <?php 
+                                if ( has_post_thumbnail() ) { 
+                                    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+                            ?>
+                                <?php $key = "slide_url"; ?> 
+                                <?php $key_value = get_post_meta($post->ID, $key, true); ?>
+                                <?php if (!empty($key_value)) : ?>
+                                   <a href="<?php echo $key_value; ?>">
+                                <?php endif; ?>
+                                        <?php the_post_thumbnail('full',array('class'=>'img-responsive')); ?>
+                                <?php if (!empty($key_value)) : ?>
+                                   </a>
+                                <?php endif; ?>
+                            <?php } ?>
+                            <div class="slider-content"><?php the_content(); ?></div>
+                        </div>
+                        <?php $cnt2++; ?>
+                     <?php endwhile; ?>
+                     <?php wp_reset_query(); ?>
     </div>
-</div>
-
+    <?php endif; ?>
+<?php } ?>
+<!-- Close If is_home-->

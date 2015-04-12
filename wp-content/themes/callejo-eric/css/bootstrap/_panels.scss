@@ -5,11 +5,9 @@
 
 // Base class
 .panel {
+  width: 300px;
   margin-bottom: $line-height-computed;
   background-color: $panel-bg;
-  border: 1px solid transparent;
-  border-radius: $panel-border-radius;
-  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
 }
 
 // Panel contents
@@ -21,8 +19,6 @@
 // Optional heading
 .panel-heading {
   padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  @include border-top-radius(($panel-border-radius - 1));
 
   > .dropdown .dropdown-toggle {
     color: inherit;
@@ -33,10 +29,12 @@
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: ceil(($font-size-base * 1.125));
+  font-family: serif;
+  font-size: ceil(($font-size-base * 1.5));
   color: inherit;
 
   > a {
+    text-decoration: none;
     color: inherit;
   }
 }

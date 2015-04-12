@@ -40,7 +40,9 @@ get_header();
               </div>
         </div>
   </div>
-                            <div class="img-divider"></div>
+  <div class="col-xs-12">
+    <div class="img-divider"></div>
+  </div>
   <div class="container">
           <div class="row">
               <div class="col-xs-12">

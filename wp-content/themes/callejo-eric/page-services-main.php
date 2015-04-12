@@ -4,17 +4,18 @@
 
 get_header(); ?>
 <div class="body-bg">
+  <div class="service-header"><img src="<?php bloginfo('template_url'); ?>/i/service-head.png"/></div>
 	<div class="container">
         <div class="main-body">
             <div class="row">
-              	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-md-push-3">
+              	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="content-block">
                       <?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
                       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                           <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                         	<header class="article-header">
-                            	<h1 class="page-title" itemprop="headline">
-								  <?php
+                              <h1 class="page-service" itemprop="headline">
+                  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
                                           the_field('custom_page_headline_(h1)');
                                     } else {
@@ -22,7 +23,40 @@ get_header(); ?>
                                     }
                                   ?>
                                 </h1>
+                                <div class="spacer"></div>
+                                <?php
+
+                                  if(get_field('second_header'))
+                                  {
+                                    echo '<h2 class="second-head">' . get_field('second_header') . '</h2>';
+                                  }
+
+                                ?>
                             </header>
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <?php 
+      if(get_field('page_subhead'))
+      {
+        echo '<div class="page-subhead">' . '<div class="col-xs-12">' . '<span>' . get_field('page_subhead') . '</span>';
+      }
+      ?>
+  <?php
+      if(get_field('subhead_content'))
+      {
+        echo '<p>' . get_field('subhead_content') . '</p></div></div>';
+      }
+      ?>
+  <div class="container">
+        <div class="main-body">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="content-block">
+                          <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                             <section itemprop="articleBody">
                                   <?php
                                     if(get_field('page_sub-headline_(h2)')) {
@@ -32,8 +66,8 @@ get_header(); ?>
                                     }
                                   ?>
                                   <?php if ( has_post_thumbnail() ) { ?>
-                                          <div class="pull-right margin-left visible-lg">
-                                              <?php the_post_thumbnail(array(200,200),array('class' => 'img-circle img-bordered')); ?>
+                                          <div class="pull-left margin-left visible-lg">
+                                              <?php the_post_thumbnail(array(200,200),array()); ?>
                                           </div><!-- /page-thumbnail -->
                                   <?php } ?>
                                   <!-- End Thumbnail Loop -->
@@ -51,7 +85,7 @@ get_header(); ?>
                            
 						  <?php
                                 $i = 1;
-                                $num_per_row = 1;
+                                $num_per_row = 2;
                           ?>
                           <?php $page_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&order=ASC'); ?>
                           
@@ -61,7 +95,7 @@ get_header(); ?>
                                     <div class="col-xs-12 col-sm-12 col-md-<?php echo 12/$num_per_row; ?> col-lg-<?php echo 12/$num_per_row; ?>">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <div class="panel-title"><a href="<?php the_permalink();?>"><?php the_title(); ?><div class="pull-right"><span class="glyphicon glyphicon-chevron-right"></span></div></a></div>  
+                                                <div class="panel-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></div>  
                                             </div>
                                             <div class="panel-body">
                                                 <?php $inner_parent = $post->ID; ?>

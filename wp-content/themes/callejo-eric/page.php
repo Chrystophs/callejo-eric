@@ -13,8 +13,8 @@
                     <div class="content-block">
                     	<article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                         	<header class="article-header">
-                            	<h1 class="page-title" itemprop="headline">
-								  <?php
+                                <h1 class="page-title" itemprop="headline">
+                                  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
                                           the_field('custom_page_headline_(h1)');
                                     } else {
@@ -22,6 +22,15 @@
                                     }
                                   ?>
                                 </h1>
+                                <div class="spacer"></div>
+                                <?php
+
+                                  if(get_field('second_header'))
+                                  {
+                                    echo '<h2 class="second-head">' . get_field('second_header') . '</h2>';
+                                  }
+
+                                ?>
                             </header>
                             <section itemprop="articleBody">
 								<?php

@@ -49,7 +49,7 @@
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
-	cursor: pointer;
+	cursor:none;
 }
 .owl-controls {
 	-webkit-user-select: none;
@@ -90,7 +90,7 @@
 
 .owl-theme .owl-controls .owl-buttons div{
 	color: #FFF;
-	display: inline-block;
+	display: none;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
@@ -114,9 +114,9 @@
 /* Styling Pagination*/
 
 .owl-theme .owl-controls .owl-page{
-	display: inline-block;
+	display: none;
 	zoom: 1;
-	*display: inline;/*IE7 life-saver */
+	*display: none;/*IE7 life-saver */
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;

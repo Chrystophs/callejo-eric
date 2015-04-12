@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <div class="request">REQUEST AN APPOINTMENT</div>
+          <a href="#" ><div class="request">REQUEST AN APPOINTMENT</div></a>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
             <div class="row">
                 <!--Footer link pics -->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 smile-footer">
-                        <img src="<?php bloginfo('template_url'); ?>/i/smile-footer-sm.jpg" alt="Smile Gallery" height="175" width="263"/>
+                        <img src="<?php bloginfo('template_url'); ?>/i/smile-footer.jpg" alt="Smile Gallery" height="175" width="263"/>
                         <h4>Smile Gallery</h4>
                         <div></div>
                 </div>
@@ -32,9 +32,11 @@
                 </div>
 
                 </div>
+                <?php if(is_front_page()): ?>
                 <div class="col-xs-12 description">
                     <img src="<?php bloginfo('template_url'); ?>/i/description.png" atl="Description"/>
                 </div>
+                <?php endif; ?>
                 <div class="col-xs-12">
                     <div class="f-phone">
                     <?php
@@ -48,10 +50,7 @@
                     <?php endif; ?>
                     <?php if (!empty($dayton_phone_new)) : ?>
                         <span class="green-tag-number">DAYTON</span> &nbsp;<span><?php if (function_exists('contact_detail')) { contact_detail('dayton_address_short'); } ?></span> <span itemprop="telephone">NEW PATIENTS: <?php echo $dayton_phone_new; ?> CURRENT PATIENTS: <?php echo $dayton_phone_current; ?></span>
-                    <?php else: ?>
-                        Phone: 
                     <?php endif; ?>
-                        <span itemprop="telephone"><strong><?php echo $phone_current; ?></strong></span>
                 </div>
                 </div>
                     <div class="footer-links">
@@ -60,7 +59,8 @@
                         'theme_location' => 'Footer Menu',
                         'depth'      => 1,
                         'container'  => false,
-                        'menu_class' => 'footer-menu nav nav-pills nav-stacked',
+                        'menu_class' => 'footer-menu nav-pills',
+                        'menu_id'   => 'nav',
                         'fallback_cb'    => '__return_false')
                         );
                     ?>

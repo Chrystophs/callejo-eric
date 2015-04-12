@@ -17,15 +17,23 @@ get_header(); ?>
                         <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                           <header class="article-header">
                               <h1 class="page-title" itemprop="headline">
+                  <?php
+                                    if(get_field('custom_page_headline_(h1)')) {
+                                          the_field('custom_page_headline_(h1)');
+                                    } else {
+                                          the_title();
+                                    }
+                                  ?>
+                                </h1>
                                 <?php
-                                  if(get_field('custom_page_headline_(h1)')) {
-                                        the_field('custom_page_headline_(h1)');
-                                  } else {
-                                        the_title();
+
+                                  if(get_field('second_header'))
+                                  {
+                                    echo '<h2 class="second-head">' . get_field('second_header') . '</h2>';
                                   }
+
                                 ?>
-                              </h1>
-                          </header>
+                            </header>
                           <section itemprop="articleBody">
                               <?php
                                 if(get_field('page_sub-headline_(h2)')) {

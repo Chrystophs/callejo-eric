@@ -417,8 +417,8 @@
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+        //color: $navbar-default-link-active-color;
+       // background-color: $navbar-default-link-active-bg;
       }
     }
     > .disabled > a {
@@ -631,9 +631,84 @@
   width: 50px;
   margin-top: 10px;
   background-repeat: no-repeat;
-  background-position: center;
   background: url('../i/nav-icon.png') 0 0;
   a {
+    width: 130px;
     left: -65%;
+  }
+}
+
+.smile {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -56px 0;
+  a {
+    width: 130px;
+    left: -35%;
+  }
+}
+
+.testimonial {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 65px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -116px 0;
+  a {
+    width: 130px;
+    left: -85%;
+  }
+}
+.promotion {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 85px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -176px 0;
+  a {
+    width: 130px;
+    left: -75%;
+  }
+}
+.become {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 115px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -236px 0;
+  a {
+    text-align: left;
+    width: 187px;
+    left: -125%;
+  }
+}
+.about {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 105px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -296px 0;
+  a {
+    width: 130px;
+    left: -25%;
+  }
+}
+.contact {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 65px;
+  background-repeat: no-repeat;
+  background: url('../i/nav-icon.png') -356px 0;
+  a {
+    width: 130px;
+    left: -45%;
   }
 }

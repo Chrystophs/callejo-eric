@@ -13,10 +13,12 @@ $(document).ready(function() {
 	});
 	
 	$("#owl-home-wide").owlCarousel({
+		autoPlay: true,
 		slideSpeed : 300,
+		loop: true,
 		paginationSpeed : 400,
 		singleItem:true,
-		navigation: true,
+		navigation: false,
 		navigationText: [
 		"<i class='glyphicon glyphicon-chevron-left'></i>",
 		"<i class='glyphicon glyphicon-chevron-right'></i>"
