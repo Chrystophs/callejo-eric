@@ -15,21 +15,21 @@
         <div class="container">   
             <div class="row">
                 <!--Footer link pics -->
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 smile-footer">
+                <a href="/smile-gallery/"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 smile-footer">
                         <img src="<?php bloginfo('template_url'); ?>/i/smile-footer.jpg" alt="Smile Gallery" height="175" width="263"/>
                         <h4>Smile Gallery</h4>
                         <div></div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 dental-footer">
+                </div></a>
+                <a href="/dental-services/"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 dental-footer">
                         <img src="<?php bloginfo('template_url'); ?>/i/dental-footer.jpg" alt="Dental Services" width="263" height="175"/>
                         <h4>Dental Services</h4>
                         <div></div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right testimonial-footer">
+                </div></a>
+                <a href="/testimonials/"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right testimonial-footer">
                         <img src="<?php bloginfo('template_url'); ?>/i/testimonial-footer.jpg" alt="Testimonials" width="263" height="175"/>
                         <h4>Testimonials</h4>
                         <div></div>
-                </div>
+                </div></a>
 
                 </div>
                 <?php if(is_front_page()): ?>

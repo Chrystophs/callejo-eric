@@ -4,6 +4,10 @@
 
 get_header(); ?>
 <div class="body-bg">
+    <?php if(get_field('page_header')) {
+      echo '<div class="service-header"><img src="'.get_field('page_header').'"/></div>';
+    } 
+    ?>
     <div class="container">
     		<div class="row">
             	<div class="col-xs-12">
@@ -16,7 +20,7 @@ get_header(); ?>
 					  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                           <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                         	<header class="article-header">
-                            	<h1 class="page-title" itemprop="headline">
+                            	<h1 class="page-title2" itemprop="headline">
 								  <?php
                                     if(get_field('custom_page_headline_(h1)')) {
                                           the_field('custom_page_headline_(h1)');
@@ -25,7 +29,26 @@ get_header(); ?>
                                     }
                                   ?>
                                 </h1>
+                                <?php
+
+                                  if(get_field('second_header'))
+                                  {
+                                    echo '<h2 class="second-head">' . get_field('second_header') . '</h2>';
+                                  }
+
+                                ?>
+                                <div class="spacer"></div>
                             </header>
+                            </article>
+                </div>
+            </div>
+          </div>
+    </div>
+           <div class="img-divider"></div>
+     <div class="container">
+        <div class="row">
+              <div class="col-xs-12">
+                            <article id="post-<?php the_ID(); ?>" role="article" itemscope itemtype="http://schema.org/WebPage">
                             <section itemprop="articleBody">
                           		<?php the_content(); ?>
                             </section>
@@ -44,7 +67,7 @@ get_header(); ?>
                                   $loop = new WP_Query( $args ); 
                               ?>
                             <section>
-                              <div id="owl-smile" class="owl-carousel owl-carousel-narrow owl-theme">
+                              <div id="owl-smile" class="owl-carousel owl-carousel-narrow owl-theme owl-controls owl-buttons owl-next owl-prev">
                                   <?php $cnt2 = 0; ?>
                                   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                                       <div>
@@ -62,8 +85,8 @@ get_header(); ?>
                                             }	
                                         ?>
                                         <?php echo do_shortcode('[gpm-gallery numperrow="'.$num_children.'" imgthumb="full"]'); ?>
-                                        <h3><?php the_title(); ?></h3> 
                                         <?php the_content(); ?>
+                                      <h3><?php the_title(); ?></h3>
                                       </div>
                                       <?php $cnt2++; ?>
                                    <?php endwhile; ?>

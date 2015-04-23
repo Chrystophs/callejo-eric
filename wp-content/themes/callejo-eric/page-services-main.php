@@ -4,7 +4,10 @@
 
 get_header(); ?>
 <div class="body-bg">
-  <div class="service-header"><img src="<?php bloginfo('template_url'); ?>/i/service-head.png"/></div>
+    <?php if(get_field('service_header')) {
+      echo '<div class="service-header visible-lg visible-md"><img src="'.get_field('service_header').'"/></div>';
+    } 
+    ?>
 	<div class="container">
         <div class="main-body">
             <div class="row">
@@ -39,18 +42,24 @@ get_header(); ?>
             </div>
         </div>
   </div>
-  <?php 
-      if(get_field('page_subhead'))
-      {
-        echo '<div class="page-subhead">' . '<div class="col-xs-12">' . '<span>' . get_field('page_subhead') . '</span>';
-      }
+  <div class="page-subhead">
+  <div class="container container2"
+    <div class="col-xs-12">
+      <?php 
+          if(get_field('page_subhead'))
+          {
+            echo '<span>' . get_field('page_subhead') . '</span>';
+          }
+          ?>
+      <?php
+          if(get_field('subhead_content'))
+          {
+            echo '<p>' . get_field('subhead_content') . '</p>';
+          }
       ?>
-  <?php
-      if(get_field('subhead_content'))
-      {
-        echo '<p>' . get_field('subhead_content') . '</p></div></div>';
-      }
-      ?>
+    </div>
+    </div>
+  </div>
   <div class="container">
         <div class="main-body">
             <div class="row">
@@ -90,48 +99,32 @@ get_header(); ?>
                           <?php $page_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&order=ASC'); ?>
                           
                           <?php while ($page_query->have_posts()) : $page_query->the_post(); ?>
-                          <section>
-                              <div class="row services-row">
-                                    <div class="col-xs-12 col-sm-12 col-md-<?php echo 12/$num_per_row; ?> col-lg-<?php echo 12/$num_per_row; ?>">
+                                    <?php 
+                                        if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                                        } 
+                                        ?>
+                                        <div class="pull-left">
+                                          <?php the_post_thumbnail(); ?>  
+                                        </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-<?php echo 8/$num_per_row; ?> col-lg-<?php echo 8/$num_per_row; ?> space2">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <div class="panel-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></div>  
+                                                <div class="panel-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></div>
                                             </div>
                                             <div class="panel-body">
                                                 <?php $inner_parent = $post->ID; ?>
-                                                <?php $child_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&order=ASC'); ?>
+                                                <?php $child_query = new WP_Query('post_type=page&post_parent='.$post->ID.'&order=ASC order_by=menu_order' . 'true'); ?>
                                                 <?php $count_child = $child_query->post_count; ?>
-                                                <?php $child_per_column = ceil($count_child/2); ?>
+                                                <?php $child_per_column = ceil($count_child/1); ?>
                                                 <?php $posts = 1; ?>
                                                 <?php $columns = 1; ?>
                                                 <div class="row">
-                                                    <?php while ($child_query->have_posts()) : $child_query->the_post(); ?>
-                                                        <?php if ($posts == 1) : ?>
-                                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                                <ul>
-                                                        <?php endif; ?>
-                                                    
-                                                            <li><a href="<?php echo get_the_permalink($inner_parent).'#'.$post->post_name;?>"><?php echo the_title(); ?></a></li>
-                                                      
-                                                        <?php if (($posts % $child_per_column == 0) || $columns == $count_child) : ?>
-                                                                </ul>
-                                                            </div>
-                                                        <?php endif; ?>
-                                                        <?php
-                                                            if ($posts%$child_per_column == 0) {
-                                                                $posts = 1;
-                                                            } else {
-                                                                $posts++;
-                                                            }
-                                                            $columns++
-                                                        ?>
-                                                    <?php endwhile; ?>
+                                                <?php if (get_field('teaser-content'));?>
+                                                <?php the_field('teaser-content'); ?>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                              </div>
-                          </section>
                           <?php endwhile; ?>
                           
                           <?php wp_reset_query(); ?> 

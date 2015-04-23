@@ -17,6 +17,11 @@
 
     <?php wp_head(); ?>
     <?php get_wpbs_theme_options(); ?>
+
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/css/jquery.bxslider.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
+
     
     <!-- css3-mediaqueries.js for IE less than 9 -->
     <!--[if lt IE 9]>

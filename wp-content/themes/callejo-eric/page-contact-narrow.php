@@ -1,52 +1,45 @@
 <?php
 
-/* Template Name: Contact (Narrow) Page */
+/* Template Name: Sub Contact Page */
 
 get_header(); ?>
 
 <div class="body-bg">
-    <div class="container" id="b-container">
-            <div class="row">
-                <div class="col-xs-12 maps-box-narrow">
-                        <a href="<?php if (function_exists('contact_detail')) { contact_detail('google_maps'); } ?>" target="_blank"  itemprop=”maps”><img src="<?php bloginfo('template_url'); ?>/i/map.jpg" alt="google-maps" class=""/></a>
-                </div>
+                <div style="padding-top:10px;">
+                        <a href="<?php if (get_field('google_maps')) { the_field('google_maps'); } ?>" target="_blank"  itemprop=”maps”><img src="<?php bloginfo('template_url'); ?>/i/<?php the_title(); ?>-map.jpg" alt="google-maps" class=""/></a>
             </div>
+    <div class="container" id="b-container">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-5" id="contact-sidebar">
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
                             <div class="content-block">
-                                <?php if ( has_post_thumbnail() ) { ?>
-                                        <div class="page-thumbnail">
-                                            <?php the_post_thumbnail(array(400,400)); ?>
-                                        </div>   
-                                <?php } ?>
                                 <?php the_content(); ?>
                                 <div itemscope itemtype="http://schema.org/Dentist">
                                 <?php 
-                                    $contact_fax = contact_detail('fax', '' , '', false);
-                                    $contact_line1 = contact_detail('address_line_1', '' , '', false);
-                                    $contact_line2 = contact_detail('address_line_2', '' , '', false);
-                                    $contact_city = contact_detail('address_city', '' , '', false);
-                                    $contact_state = contact_detail('address_state', '' , '', false);
-                                    $contact_zipcode = contact_detail('address_zipcode', '' , '', false);
-                                    $phone_new = contact_detail('phone_new', '' , '', false);
-                                    $phone_current = contact_detail('phone_current', '' , '', false);
+                                    $contact_fax = get_field('fax', '' , '', false);
+                                    $contact_line1 = get_field('address-line-1', '' , '', false);
+                                    $contact_line2 = get_field('address-line-2', '' , '', false);
+                                    $contact_city = get_field('city', '' , '', false);
+                                    $contact_state = get_field('state', '' , '', false);
+                                    $contact_zipcode = get_field('zip_code', '' , '', false);
+                                    $phone_new = get_field('new-patient', '' , '', false);
+                                    $phone_current = get_field('current-patient', '' , '', false);
     
-                                    $hours_sunday = contact_detail('sunday_hours', '' , '', false);
-                                    $hours_monday = contact_detail('monday_hours', '' , '', false);
-                                    $hours_tuesday = contact_detail('tuesday_hours', '' , '', false);
-                                    $hours_wednesday = contact_detail('wednesday_hours', '' , '', false);
-                                    $hours_thursday = contact_detail('thursday_hours', '' , '', false);
-                                    $hours_friday = contact_detail('friday_hours', '' , '', false);
-                                    $hours_saturday = contact_detail('saturday_hours', '' , '', false);
+                                    $hours_sunday = get_field('sunday_hours', '' , '', false);
+                                    $hours_monday = get_field('monday_hours', '' , '', false);
+                                    $hours_tuesday = get_field('tuesday_hours', '' , '', false);
+                                    $hours_wednesday = get_field('wednesday_hours', '' , '', false);
+                                    $hours_thursday = get_field('thursday_hours', '' , '', false);
+                                    $hours_friday = get_field('friday_hours', '' , '', false);
+                                    $hours_saturday = get_field('saturday_hours', '' , '', false);
                                     
-                                    $hours_sunday_schema = contact_detail('sunday_hours_schema', '' , '', false);
-                                    $hours_monday_schema = contact_detail('monday_hours_schema', '' , '', false);
-                                    $hours_tuesday_schema = contact_detail('tuesday_hours_schema', '' , '', false);
-                                    $hours_wednesday_schema = contact_detail('wednesday_hours_schema', '' , '', false);
-                                    $hours_thursday_schema = contact_detail('thursday_hours_schema', '' , '', false);
-                                    $hours_friday_schema = contact_detail('friday_hours_schema', '' , '', false);
-                                    $hours_saturday_schema = contact_detail('saturday_hours_schema', '' , '', false);
+                                    $hours_sunday_schema = get_field('sunday_hours_schema', '' , '', false);
+                                    $hours_monday_schema = get_field('monday_hours_schema', '' , '', false);
+                                    $hours_tuesday_schema = get_field('tuesday_hours_schema', '' , '', false);
+                                    $hours_wednesday_schema = get_field('wednesday_hours_schema', '' , '', false);
+                                    $hours_thursday_schema = get_field('thursday_hours_schema', '' , '', false);
+                                    $hours_friday_schema = get_field('friday_hours_schema', '' , '', false);
+                                    $hours_saturday_schema = get_field('saturday_hours_schema', '' , '', false);
                                 ?>
                                 <address itemscope itemtype="http://schema.org/PostalAddress">
                                     <span itemprop="description" class="contact-name"><?php bloginfo('description'); ?></span><br/>

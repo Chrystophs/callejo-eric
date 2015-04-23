@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <div class="body-bg">
+    <?php if(get_field('page_header')) {
+      echo '<div class="service-header"><img src="'.get_field('page_header').'"/></div>';
+    } 
+    ?>
     <div class="container">
     	<div class="row">
         	<div class="col-xs-12">
@@ -7,7 +11,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <!-- Right Body Container -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
                     <div class="content-block">
@@ -22,7 +26,6 @@
                                     }
                                   ?>
                                 </h1>
-                                <div class="spacer"></div>
                                 <?php
 
                                   if(get_field('second_header'))
@@ -31,7 +34,19 @@
                                   }
 
                                 ?>
+                                <div class="spacer"></div>
                             </header>
+                        </article>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="img-divider"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="content-block">
+                        <article>
                             <section itemprop="articleBody">
 								<?php
                                   if(get_field('page_sub-headline_(h2)')) {
@@ -54,13 +69,6 @@
                     <?php get_search_form(); ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            	<div class="content-block">
-                	<aside>
-                		<?php get_sidebar('sidebar')?>
-                    </aside>
-                </div>
             </div>
         </div>
     </div>

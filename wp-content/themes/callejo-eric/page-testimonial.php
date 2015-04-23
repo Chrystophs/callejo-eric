@@ -4,6 +4,10 @@
 
 get_header(); ?>
 <div class="body-bg">
+    <?php if(get_field('page_header')) {
+      echo '<div class="service-header"><img src="'.get_field('page_header').'"/></div>';
+    } 
+    ?>
 	<div class="container">
     	<div class="row">
         	<div class="col-xs-12">
@@ -25,6 +29,25 @@ get_header(); ?>
                                     }
                                   ?>
                                 </h1>
+                                <div class="spacer"></div>
+                                <?php
+
+                                  if(get_field('second_header'))
+                                  {
+                                    echo '<h2 class="second-head">' . get_field('second_header') . '</h2>';
+                                  }
+
+                                ?>
+                            </header>
+                            </article>
+                </div>
+            </div>
+          </div>
+    </div>
+           <div class="img-divider"></div>
+     <div class="container">
+        <div class="row">
+              <div class="col-xs-12">
                             </header>
 					  		<section itemprop="articleBody">
 									<?php
@@ -47,7 +70,7 @@ get_header(); ?>
                             </section>
                   
 							<?php 
-                                $args = array( 'post_type' => 'testimonials', 'order' => 'ASC' );
+                                $args = array( 'post_type' => 'testimonials', 'order' => 'ASC');
                                 $loop = new WP_Query( $args );
                             ?>
                             <div class="row">
@@ -65,9 +88,9 @@ get_header(); ?>
                                         </div>
                                     <?php } ?>
                                     
-                                    <?php if ( has_post_thumbnail() ) { ?><div class="col-xs-9"><?php } else { ?><div class="col-xs-12"><?php } ?>
+                                    <?php if ( has_post_thumbnail() ) { ?><div class="col-xs-9"><?php } else { ?><div class="col-xs-12 quote"><?php } ?>
                                         <?php the_content(); ?>
-                                        <h3 class="text-right"><em>- <?php the_title(); ?></em></h3>
+                                        <h4 class="text-right"><em>- <?php the_title(); ?></em></h4>
                                     </div>
                                 </div>
                                 <div class="row">
